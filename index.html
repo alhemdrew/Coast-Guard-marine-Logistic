@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+  <title> Coast Marine Marine Logistics</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet"/>
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet"/>
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  
+  <!-- header section start -->
+<style>
+  
+</style>
+  <header class="header_section" style="margin-top: 0;">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a href="index.html" class="navbar-brand">
+          <img src="img/logo/logo11.png" alt="">
+          <span id="responsiveText" style="color: #184d47; font-size: 30px; font-weight: bold;">
+            Coast Marine Marine Logistics
+        </span>
+        
+        <script>
+            function adjustFontSize() {
+                var textElement = document.getElementById("responsiveText");
+                if (window.innerWidth <= 768) {
+                    textElement.style.fontSize = "15px";
+                } else {
+                    textElement.style.fontSize = "30px";
+                }
+            }
+        
+            window.onload = adjustFontSize;
+            window.onresize = adjustFontSize;
+        </script>
+        
+        </a>
+        <div class="" id="">
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+            <span class="s-1"></span>
+            <span class="s-2"></span>
+            <span class="s-3"></span>
+          </button>
+          <div class="overlay" id="myNav">
+            <div class="overlay-content">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="services.html">Our Services</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="contact.html">Contact</a>
+              <ul></ul>
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- End of header section -->
+<!-- Include Swiper CSS -->
+
+<!-- Slider Section -->
+<section class="slider_section">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="slide-overlay"></div>
+        <img src="img/banner/mining1.jpg" alt="">
+        <div class="detaill-box">
+          <h1>Welcome To<br>Coast Guard Marine Logistics Services</h1>
+          <p>Providing professional solutions in Mining, Logistics, Security, and Real Estate.</p>
+          <a href="services.html" class="btn btn-primary">Explore Services</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="slide-overlay"></div>
+        <img src="img/banner/mining2.jpg" alt="">
+        <div class="detaill-box">
+          <h1>Reliable Mining Services</h1>
+          <p>Ensuring efficiency in the mining sector with cutting-edge solutions.</p>
+          <a href="services.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="slide-overlay"></div>
+        <img src="img/banner/mining22.jpg" alt="">
+        <div class="detaill-box">
+          <h1>Seamless Logistics Solutions</h1>
+          <p>We provide smooth and reliable logistics services for all industries.</p>
+          <a href="services.html" class="btn btn-primary">Discover More</a>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="swiper-slide">
+        <div class="slide-overlay"></div>
+        <img src="img/banner/security25.jpg" alt="">
+        <div class="detaill-box">
+          <h1>Advanced Security Solutions</h1>
+          <p>Offering top-notch security services to safeguard businesses and individuals.</p>
+          <a href="services.html" class="btn btn-primary">View Services</a>
+        </div>
+      </div>
+      <!-- Slide 5 -->
+      <div class="swiper-slide">
+        <div class="slide-overlay"></div>
+        <img src="img/banner/realestate1231.jpg" alt="">
+        <div class="detaill-box">
+          <h1>Real Estate Excellence</h1>
+          <p>Helping you find the best properties for investment and residence.</p>
+          <a href="services.html" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</section>
+
+<!-- Include Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    speed: 1000,
+    effect: "slide",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+<!-- Custom CSS -->
+<style>
+.black{
+    font-size: 30px;
+    color:black;
+  }
+  .slider_section {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+  }
+
+ .swiper-slide {
+  width: 100vw;
+  min-height: 100vh; /* Ensures it covers the full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100vw; /* Covers full width */
+  height: 70vh; /* Ensures full height */
+  object-fit: cover; /* Covers without gaps */
+}
+
+
+
+
+  .slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .detaill-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    max-width: 80%;
+  }
+
+  .detaill-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .detaill-box p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  /* Mobile View */
+  @media screen and (max-width: 768px) {
+    .black{
+    font-size: 10px;
+  }
+    .detaill-box {
+      width: 90%;
+      padding: 15px;
+    }
+
+    .detaill-box h1 {
+      font-size: 1.8rem;
+    }
+
+    .detaill-box p {
+      font-size: 1rem;
+    }
+
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
+</style>
+
+
+  <!-- End of slider section -->
+
+  <!-- Special section -->
+  <section class="spcl_section layout_padding" style="margin-top: 0px; padding-top:0 ;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail_container">
+            <div class="detail-box">
+              <div class="img-boxsm">
+              <img  src="img/gallery/army/mining29.jpg" alt=""></div>
+              <h5 class="text-4xl font-bold mb-4">Leading mining and resource development company</h5>
+                    <p class="text-lg mb-4">
+                        At COAST GUARD MARINE LOGISTICS SERVICES AND MINING NIG LTD, we are committed to delivering world-class services in coast guard operations, logistics, and mining. With a strong presence across multiple industries, we ensure efficiency, safety, and reliability in everything we do. Our expertise spans across these critical sectors, helping businesses and communities thrive while upholding the highest standards of professionalism and sustainability.
+                    </p>
+                    
+            </div>
+            
+            <div class="detail-box">
+              <img src="images/s3.png" alt="">
+              <h5>Excellence as a mantra</h5>
+              <p class="text-lg">
+                Our mission is to provide reliable and efficient services in coast guard operations, logistics, and mining. We strive to uphold the highest standards of integrity, safety, and environmental responsibility while meeting the evolving needs of our clients and partners.
+            
+
+
+      </p>
+            </div>
+          </div>
+        </div>
+        <style>
+          .slider-containe {
+              position: relative;
+              width: 300px;
+              height: 400px;
+              overflow: hidden;
+          }
+  
+          .x img {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              opacity: 1;
+              transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+          }
+  
+          .fade-out {
+              transform: translateY(-100%);
+              opacity: 0;
+          }
+      </style>
+  </head>
+  <body>
+  
+  <div class="col-md-6 col-lg-5 ml-auto">
+      <div class="slider-containe">
+          <div class="img-box x">
+              <img src="img/about/goldd1.jpg" alt="Image 1">
+              <img src="img/about/logistics551.png" alt="Image 2" style="display: none;">
+              <img src="img/about/mining117.jpg" alt="Image 3" style="display: none;">
+              <img src="img/about/security23.webp" alt="Image 4" style="display: none;">
+
+            </div>  </div>
+
+  </div>
+  
+  <script>
+      let images = document.querySelectorAll('.img-box img');
+      let currentIndex = 0;
+  
+      function changeImage() {
+          let currentImage = images[currentIndex];
+          currentImage.classList.add('fade-out');
+  
+          setTimeout(() => {
+              currentImage.style.display = 'none';
+              currentImage.classList.remove('fade-out');
+  
+              currentIndex = (currentIndex + 1) % images.length;
+              let nextImage = images[currentIndex];
+              nextImage.style.display = 'block';
+          }, 1000);
+      }
+  
+      setInterval(changeImage, 3000);
+  </script>
+    </div>
+  </section>
+  <!-- End of special section -->
+
+  <!-- about section -->
+  <section class="about_section layout_padding-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box" style="border: 1px solid black;">
+            <img src="images/IMG-20250308-WA0020.jpg" alt="">
+
+          </div>
+        </div>
+        <div class="col-md-6"><div class="detail-box">
+          <div class="heading_container">
+            <h2>About Us</h2>
+          </div>
+          <p>At  Coast Marine Marine Logistics we take full responsibility for delivering pure, high-quality coffee that stays true to its origins. We carefully source our beans and roast them in-house, ensuring freshness, rich aroma, and a perfectly balanced flavor in every cup. Our commitment goes beyond just great coffee—we provide premium coffee products and essential brewing tools to help you create the best coffee experience, whether at home or in your café.
+
+
+          </p>
+          <a href="">Read More</a>
+        </div></div>
+      </div>
+    </div>
+  </section>
+<!-- End of about us page -->
+
+<!-- contact section -->
+<section class="contact_section layout_padding">
+  <div class="contact_bg_box">
+    <img src="img/bg/mining1.jpg" alt="">
+  </div>
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>Contact Us</h2>
+    </div> 
+    <div class="">
+      <div class="row">
+        <div class="col-md-7 mx-auto">
+          <form action="">
+            <div class="contact_form-container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" placeholder="Full Name">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" placeholder="Email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="number" placeholder="Phone Number" />
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" placeholder="Subject" />
+                </div> 
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="date" placeholder="Select date" />
+                </div>
+                <div class="col-sm-6">
+                  <input type="time" placeholder="Select Time" />
+                </div>
+              </div>
+              <div class="">
+                <style>
+                textarea{
+                    width: 90%;
+                    border-radius: 20px;
+                    border: white 1px solid;
+                    background-color: transparent;
+                    color: white;
+                    text-align: center;
+                    padding:10px;
+                                    }
+                                    ::placeholder{
+                                        color: white;
+                                    }
+                </style>
+                <textarea type="text" placeholder="Your message" class="message_input" ></textarea>
+              </div>
+              <div class="btn_box">
+                <button type="submit">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of contact section -->
+
+<!-- Testimonial section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Our Special Services</h2>
+      </div>
+      <div class="carousel slide" id="carouselExampleControls" data-ride:="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="img-box">
+                <img src="img/service/security1.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>Comprehensive Security Services for Coastal and Marine Operations</h4>
+                <p>Ensuring Safety, Compliance, and Protection Across Every Maritime and Land-Based Operation
+                  Coast guard marine logistics, we prioritize security across all our operations, from coast guard marine logistics to mining, transportation, and beyond.
+
+                </p>
+                <a href="details-services-seurity.html" style="background-color: #184d47;" class="btn btn-primary">More Info</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="img/service/logistics59.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>Efficient Logistics Solutions for Seamless Operations</h4>
+                <p>Coast guard marine logistics, we provide reliable logistics services to support
+                  coast guard, marine, mining, and security operations. Our expertise ensures timely delivery of equipment, supplies, and personnel, even in challenging environments.
+
+                </p>
+                <a href="details-services-logistics.html" style="background-color: #184d47;" class="btn btn-primary">More Info</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="img/service/mining13.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>Reliable Mining Logistics & Support</h4>
+                <p>At Coast guard marine logistics, we provide efficient logistics and support services for mining operations. 
+                  From transporting heavy machinery and equipment to supplying fuel, spare parts, and essential materials, we ensure smooth and uninterrupted mining activities  
+
+                </p>
+                <a href="details-services-mining.html" style="background-color: #184d47;" class="btn btn-primary">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a href="#carouselExampleControls" class="carousel-control-prev" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a href="#carouselExampleControls" class="carousel-control-next" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of client section -->
+
+  
+            <!-- service content -->    
+            <div class="bg-blue-600 p-8">
+              <div class="flex flex-wrap gap-6 justify-center">
+                  <div class="w-full md:w-1/3 p-4 bg-white rounded-lg shadow-lg">
+                      <h1 class="text-xl font-bold mb-4">Our Mission</h1>
+                      <p>Mine-stones and Gemstones such as lithium, zinc, copper, Sapphire, blue sapphire and many more. We specialize in sourcing and trading precious mine-stones and gemstones, ensuring authenticity, quality, and value for our clients.</p>
+                  </div>
+                  <div class="w-full md:w-1/3 p-4 bg-white rounded-lg shadow-lg">
+                      <h1 class="text-xl font-bold mb-4">Our Vision</h1>
+                      <p>Security Guard Services: Our team of highly trained security professionals provides top-notch security solutions, ensuring the safety and security of our clients' assets and personnel.</p>
+                  </div>
+                  <div class="w-full md:w-1/3 p-4 bg-white rounded-lg shadow-lg">
+                      <h1 class="text-xl font-bold mb-4">Our Goal</h1>
+                      <p>To provide reliable, high-quality solutions in mining, logistics, security, and real estate, driving growth and creating lasting value for our stakeholders.</p>
+                  </div>
+              </div>
+          </div>
+  <!-- start of footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_content">
+            <h4>Reach at...</h4>
+            <div class="contact_link_box">
+              <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Location: </span></a>
+              <a href=""><i class="fa fa-phone" aria-hidden="true"></i>
+              <span>Call 09-82757113</span></a>
+              <a href=""><i class="fa fa-envelop" aria-hidden="true"></i>
+              <span>coastguardmarin@gov.ng</span></a>
+              <h6 class="font-medium"><span class="text-gray-300">Address:</span> NSCDC HQ</h6>
+              <p class="text-sm opacity-80">Along Umaru Musa Yar'adua Expressway, Airport Road, Sauka, Abuja, FCT Nigeria.</p>
+  
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              Coast Marine Marine Logistics
+            </a>
+            <p>Our company was founded with a vision to provide exceptional services in marine logistics, mining, security, and transportation. Over the years, we have built a reputation for reliability, efficiency, and professionalism. Our team comprises highly skilled experts who bring decades of experience to ensure we meet and exceed industry standards.
+
+
+            </p>
+            
+            <div class="footer_social">
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div> <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=NSCDC HQ+Umaru Musa Yar'adua Expressway, Airport Road, Sauka, Abuja, FCT Nigeria." width="00" height="200" frameborder="0" style="border:0; width: 100%; " allowfullscreen></iframe></div>  
+        
+      </div>
+      <div class="footer-info">
+        <p>&copy; <span id="displayYear"></span>All Rights Reserved By
+        <a href="#"> Coast Marine Marine Logistics</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer section -->
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  
+
+
+</body>
+
+</html>
